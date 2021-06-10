@@ -1,0 +1,50 @@
+@import '../../../../../sass//base/main';
+
+.overview{
+    display: flex;
+    align-items: center;
+    border-bottom: $border-bottom-grey-light;
+
+    &__heading {
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+    }
+
+    &__location{
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+    &__location_icon{
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: $color-primary;
+        margin-right: .5rem;
+        
+    }
+    &__rating{
+        background-color: $color-primary;
+        margin-left: 3rem;
+        color: white;
+        padding: 0 2.25rem;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    &__average{
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin-bottom: -3px;
+    }
+    &__rating_count{
+        font-size: .8rem;
+        text-transform: uppercase;
+        
+    }
+}

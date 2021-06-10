@@ -1,0 +1,25 @@
+ @import '/sass/base/variables';
+ 
+ .icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: $color-grey-dark-2;
+  }
+ .iconbox {
+    position: relative;
+  }
+.notification {
+    font-size: 0.8rem;
+    color: #fff;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: #fb3640;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

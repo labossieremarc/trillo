@@ -1,0 +1,29 @@
+@import '../../../../sass/base/variables';
+.link {
+    &:link,
+    &:visited {
+      color: $color-grey-light-1;
+      text-decoration: none;
+      text-transform: uppercase;
+      z-index: 10;
+      position: relative;
+      display: block;
+      padding: 1.5rem 3rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+.icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 2rem;
+    fill: $color-grey-dark-3;
+}
+.active{
+  background-image: $color-primary-gradiant;
+  cursor: default;
+  .icon{
+    fill: darkgoldenrod;
+  }
+}
