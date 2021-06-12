@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './HomePageHeader.module.scss'
-import logo from "../Assets/logo-white.png";
+import styles from "./HomePageComponents.module.scss";
+import logo from "../../../Assets/logo-white.png";
 import { Link } from "react-router-dom";
-import { WhiteButtonAnimated } from '../../../Utilities/Button/Button';
+import { ButtonAnimated } from '../../../Utilities/Button/Button';
 
 const HomePageHeader = () => {
 
@@ -19,7 +19,7 @@ const HomePageHeader = () => {
             </span>
           </h1>
           <Link to="/trillo/hotel">
-            <WhiteButtonAnimated>Discover Our Tours</WhiteButtonAnimated>
+            <ButtonAnimated animated={true}>Discover Our Tours</ButtonAnimated>
           </Link>
         </div>
       </header>

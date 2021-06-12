@@ -1,8 +1,10 @@
 import React from "react";
-import { Fragment } from "react";
-
 import styles from "./HomePage.module.scss";
+import HomePageAbout from "./HomePageComponents/HomePageAbout";
+import HomePageFeatures from "./HomePageComponents/HomePageFeatures";
 import HomePageHeader from "./HomePageComponents/HomePageHeader";
+import HomePagePopularTours from "./HomePageComponents/HomePagePopularTours";
+import HomePageStories from "./HomePageComponents/HomePageStories";
 
 
 const HomePage = () => {
@@ -10,9 +12,10 @@ const HomePage = () => {
     <section className={styles.main}>
       <HomePageHeader />
       <main>
-        <section className={styles.section__about}>
-          <h2 className={styles.heading__secondary}>Exciting tours for adventurous people</h2>
-        </section>
+        <HomePageAbout />
+        <HomePageFeatures />
+        <HomePagePopularTours />
+        <HomePageStories/>
       </main>
     </section>
   );

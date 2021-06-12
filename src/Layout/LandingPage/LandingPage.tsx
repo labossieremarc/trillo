@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Switch, Route } from "react-router";
 import FlightView from "../../Components/directory/FlightView/FlightView";
 import HotelView from "../../Components/directory/HotelView/HotelView";
@@ -9,6 +9,9 @@ import SideBar from "../../Components/SideBar/SideBar";
 import styles from "./LandingPage.module.scss";
 
 const LandingPage = () => {
+  useEffect(() => {
+   window.scrollTo(0,0)
+  }, []);
   return (
     <div className={styles.main}>
       <div className={styles.container}>

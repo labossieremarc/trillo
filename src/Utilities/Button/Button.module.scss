@@ -1,5 +1,31 @@
 @import "../../../sass/base/main.scss";
 
+.orange {
+  background-color: $color-orange-dark;
+  color: $color-white;
+}
+.blue {
+  background-color: $color-primary;
+  color: $color-white;
+  &::after {
+    background-color: $color-primary;
+  }
+}
+.green {
+  background-color: $color-green-primary;
+  color: $color-white;
+  &::after {
+    background-color: $color-green-primary;
+  }
+}
+.white {
+  background-color: $color-white;
+  color: $color-black;
+  &::after {
+    background-color: $color-white;
+  }
+}
+
 .inline {
   border: none;
   color: $color-primary;
@@ -47,7 +73,7 @@
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
-  &:hover{
+  &:hover {
     outline: none;
     animation: pulsate 1s infinite;
   }
@@ -56,7 +82,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   &__visible {
@@ -76,23 +102,21 @@
   &:hover &__invisible {
     top: 0;
   }
-
 }
 
-.btn {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    border-radius: 10rem;
-    display: inline-block;
-    transition: all 0.2s;
-    position: relative;
-    font-size: 1.6rem;
-    border:none;
+.animatedbtn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
 
   &:hover {
     transform: translateY(-0.3rem);
-    color: rgb(4, 114, 114);
     box-shadow: 0 0.5em 1rem rgba($color-black, 0.2);
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -115,15 +139,45 @@
     z-index: -1;
     transition: all 0.4s;
   }
-  &__white {
-    background-color: $color-white;
-    color: $color-grey-dark-2;
-    &::after {
-      background-color: $color-white;
-    }
-  }
   &__animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
+  }
+}
+
+.underlineButton {
+  font-size: $default-font-size;
+  color: $color-primary;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $color-primary;
+
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 1);
+    transform: translateY(-2px);
+    & span {
+      margin-left: 8px;
+    }
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 1);
+    transform: translateY(0px);
+    & span {
+      margin-left: 3px;
+      transition: margin-left 0.2s;
+    }
   }
 }
