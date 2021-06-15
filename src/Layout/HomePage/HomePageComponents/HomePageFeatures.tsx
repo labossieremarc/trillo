@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./HomePageComponents.module.scss";
-
 import FeatureBox from "../../../Utilities/FeatureBox/FeatureBox";
 import { features } from "../../../DummyData/DummyData";
-import { ButtonAnimated } from "../../../Utilities/Button/Button";
+
 
 const HomePageFeatures = () => {
   return (

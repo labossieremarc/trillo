@@ -9,8 +9,9 @@ const StoryCard = ({story} : Props) => {
   return (
     <div className={styles.stories__row}>
       <div className={styles.story}>
-              <figure className={styles.shape}>
-                  <img className={styles.image} src={story.image} alt="person"></img>
+              <figure className={styles.story__shape}>
+                  <img className={styles.story__image} src={story.image} alt="person"></img>
+                  <figcaption className={styles.story__caption}>{story.name}</figcaption>
         </figure>
         <div className={styles.text}>
           <h3 className={`${styles.heading__tertiary} ${styles.heading}`}>

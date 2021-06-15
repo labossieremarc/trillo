@@ -18,9 +18,9 @@ const HomePageHeader = () => {
               is where life happens
             </span>
           </h1>
-          <Link to="/trillo/hotel">
+          <a href="#section-tours">
             <ButtonAnimated animated={true}>Discover Our Tours</ButtonAnimated>
-          </Link>
+          </a>
         </div>
       </header>
     );

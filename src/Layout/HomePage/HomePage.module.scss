@@ -7,6 +7,9 @@
   line-height: 1.7;
   color: $color-grey-dark-2;
   padding: 3rem;
+    @include respond(port) {
+    padding: 0;
+  }
 }
 
 

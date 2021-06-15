@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Tours } from "../../DummyData/DummyData";
 import { ButtonAnimated } from "../Button/Button";
 import styles from "./FlipCard.module.scss";
@@ -25,7 +25,6 @@ const FlipCard = ({ tours, index }: Props) => {
       background = styles.card__picture_3;
       break;
   }
-  console.log(color);
   return (
     <section className={styles.card}>
       <div className={`${styles.card__side} ${styles.card__side_front}`}>
@@ -51,7 +50,9 @@ const FlipCard = ({ tours, index }: Props) => {
             <p className={styles.price_only}>Only</p>
             <p className={styles.price_value}>${tours.cost}</p>
           </div>
-          <ButtonAnimated>Book Now</ButtonAnimated>
+          <a href='#modal'>
+            <ButtonAnimated>Book Now</ButtonAnimated>
+          </a>
         </div>
       </div>
     </section>

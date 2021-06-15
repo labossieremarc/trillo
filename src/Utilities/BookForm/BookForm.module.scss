@@ -1,0 +1,21 @@
+@import '/sass/base/main';
+
+
+.book__heading{
+    margin-bottom: $margin_bottom_small;
+}
+
+.radiogroup{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    &__left{
+        margin-left: -4rem;
+    }
+} 
+.button {
+    display:flex;
+
+    margin-top: 3.5rem;
+}

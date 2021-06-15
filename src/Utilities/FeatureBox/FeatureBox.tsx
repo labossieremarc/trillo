@@ -1,7 +1,4 @@
 import React from 'react'
-import { ReactChildren } from 'react';
-import { IconType } from 'react-icons';
-import { FaGlobeAsia } from 'react-icons/fa';
 import styles from './FeatureBox.module.scss';
 
 interface Props {

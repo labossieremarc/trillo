@@ -1,32 +1,28 @@
 import React from "react";
 import styles from './CompositionPhoto.module.scss'
 
-interface Props {
-  image1: string;
-  image2: string;
-  image3: string;
-}
 
-const CompositionPhoto = ({ image1, image2, image3 }: Props) => {
+
+const CompositionPhoto = () => {
   return (
     <>
       <div className={styles.composition}>
         <img
-          src={image1}
+          src="img/nat-1-large.jpg"
           alt="nat1"
           className={`${styles.composition__photo} ${styles.composition__photo_p1}`}
         />
       </div>
       <div className={styles.composition}>
         <img
-          src={image2}
+          src="img/nat-2-large.jpg"
           alt="nat2"
           className={`${styles.composition__photo} ${styles.composition__photo_p2}`}
         />
       </div>
       <div className={styles.composition}>
         <img
-          src={image3}
+          src="img/nat-3-large.jpg"
           alt="nat3"
           className={`${styles.composition__photo} ${styles.composition__photo_p3}`}
         />

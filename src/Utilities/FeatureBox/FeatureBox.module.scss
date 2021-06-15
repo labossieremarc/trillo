@@ -9,6 +9,14 @@
     border-radius: .3rem;
     box-shadow: 0 1.5rem 4rem rgba( black, .15);
     transition: transform .3s;
+    @include respond(land){
+    max-width: 35%;
+    margin: 2rem 2rem 2rem 2rem;
+     }
+    @include respond(phone){
+        margin-bottom: 5rem;
+        
+    }
    
     &__icon{
         width: 6rem;
@@ -18,9 +26,7 @@
         fill-opacity: .6;
     }
 
-    &__text{
 
-    }
     &:hover{
       transform: translateY(-1.5rem) scale(1.03);  
     } 

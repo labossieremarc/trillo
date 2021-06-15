@@ -1,9 +1,6 @@
 import React from "react";
 import { UnderlineButton } from "../../../Utilities/Button/Button";
 import styles from "./HomePageComponents.module.scss";
-import nat1 from "../../../Assets/nat-1-large.jpg";
-import nat2 from "../../../Assets/nat-2-large.jpg";
-import nat3 from "../../../Assets/nat-3-large.jpg";
 import CompositionPhoto from "../../../Utilities/Composition Photo/CompositionPhoto";
 
 const HomePageAbout = () => {
@@ -43,7 +40,7 @@ const HomePageAbout = () => {
           </div>
         </div>
         <div className={styles.section__image}>
-          <CompositionPhoto image1={nat1} image2={nat2} image3={nat3} />
+          <CompositionPhoto />
         </div>
       </div>
     </section>

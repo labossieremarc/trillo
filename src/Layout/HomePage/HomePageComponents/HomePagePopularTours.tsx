@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const HomePagePopularTours = () => {
   return (
-    <section className={styles.popular}>
+    <section className={styles.popular} id="section-tours">
       <div className={styles.popular__header}>
         <h2 className={styles.heading__secondary}>Most Popular Tours</h2>
       </div>
@@ -17,11 +17,11 @@ const HomePagePopularTours = () => {
         ))}
       </div>
       <div className={styles.discover}>
-        <Link to='/trillo/tours'>
+        <a href="/trillo/tours">
           <ButtonAnimated colorScheme="blue">
             Discover all our Tours
           </ButtonAnimated>
-        </Link>
+        </a>
       </div>
     </section>
   );

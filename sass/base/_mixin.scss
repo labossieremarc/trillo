@@ -1,0 +1,44 @@
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+////Media Query Manager////
+/*
+0-600px     Phone
+600-900px   Tablet portrait
+900-1200px  Tablet Landscape
+1200-1800px Normal styles apply
+1800px+:    large desktop
+*/
+
+/*
+phone
+port
+land
+big
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  } 
+  @if $breakpoint == land {
+    @media (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  } //1800px
+}

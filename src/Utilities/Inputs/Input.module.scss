@@ -1,0 +1,84 @@
+@import '/sass/base/main';
+
+.input{
+    &__input{
+        font-family: inherit;
+        color: inherit;
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        border-radius: .2rem;
+        background-color: rbga($color-white, .5);
+        border: none;
+         border-bottom: .3rem solid transparent;
+         width: 90%;
+         display: block;
+         transition: all .3s;
+         &:focus{
+             outline: none;
+             box-shadow: 0 1rem 2rem rgba($color-black, .3);
+             border-bottom: .3rem solid $color-green-dark;
+         }
+         &:focus:invalid{
+             border-bottom: .3rem solid $color-orange-dark;
+         }
+         &::-webkit-input-placeholder{
+             color: $color-grey-dark-3;
+         }
+    }
+
+    &__label{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 1.8rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}
+
+.radio {
+    margin-left: 5rem;
+    &__label{
+        font-size: $default-font-size;
+        cursor: pointer;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+    &__button{
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $color-primary;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: -2.1rem;
+        top: -.5rem;
+
+        &::after{
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 19%;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: $color-primary;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+    }
+    &__input:checked + &__label &__button::after{   
+        opacity: 1;
+    }
+    &__input{
+        opacity: 0;
+    }
+}

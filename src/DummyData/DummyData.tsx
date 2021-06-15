@@ -98,17 +98,17 @@ export const tourStories = [
   {
     heading: "I had the best week ever with my Familly",
     content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat,
-            qui voluptas cupiditate blanditiis quidem expedita, dolore doloribus
+            qui voluptas cupiditate expedita, dolore doloribus
             nemo doloremque quam natus dicta perspiciatis.  Adipisicing elit. Corrupti dicta enim dolores pariatur ab in similique hic exercitationem saepe non beatae omnis ipsam atque, dolorum velit vel minima. Vel, voluptatibus!`,
     image: nat8,
-    name: "Marry",
+    name: "Marry Smith",
   },
   {
-    heading: "I had the best week ever with my Familly",
-    content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat,
+    heading: "Wow! This was a life changing event",
+    content: `Dor sit amet consectetur adipisicing elit. Fugiat,
             qui voluptas cupiditate blanditiis quidem expedita, dolore doloribus
-            nemo doloremque quam natus dicta perspiciatis.  Adipisicing elit. Corrupti dicta enim dolores pariatur ab in similique hic exercitationem saepe non beatae omnis ipsam atque, dolorum velit vel minima. Vel, voluptatibus!`,
+            nemo doloremque quam natus dicta perspiciatis.  Adipisicing elit. Corrupti dicta enim dolores pariatur ab in similique hic exercitationem saepe non beatae omnis ipsam atque, dolorum velit vel minima.`,
     image: nat9,
-    name: "Marry",
+    name: "John Doe",
   },
 ];

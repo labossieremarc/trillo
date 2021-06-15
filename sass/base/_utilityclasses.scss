@@ -1,24 +1,25 @@
-.u_center_text{
+@import './mixin';
+.u_center_text {
   display: flex;
   justify-content: center;
 }
-.u_margin_bottom_big{
+.u_margin_bottom_big {
   margin-bottom: 8rem;
 }
-.u_margin_bottom_medium{
+.u_margin_bottom_medium {
   margin-bottom: 4rem;
 }
-.u_margin_bottom_small{
+.u_margin_bottom_small {
   margin-bottom: 1.5rem;
 }
 
-.heading__tertiary{
- font-size: $default-font-size;
- font-weight: 700;
- text-transform: uppercase;
+.heading__tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-.heading__secondary{
-  cursor:default;
+.heading__secondary {
+  cursor: default;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -26,14 +27,21 @@
   background-image: $color-primary-gradiant;
   background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  @include respond(port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+
+    font-size: 2.4rem;
+  }
   &:hover {
     transform: skewY(1deg) skewX(10deg) scale(1.1);
-    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
 
-.list{
+.list {
   list-style: none;
 }
